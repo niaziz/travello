@@ -1,15 +1,14 @@
-import Brands from "@/components/brands";
-import Carousel from "@/components/carousel";
-import Header from "@/components/header";
+import React from "react";
+import Home from "@/components/home";
 
-import Image from "next/image";
+type Props = {};
 
-export default function Home() {
+const page = (props: Props) => {
   return (
-    <main className="">
-      <Header />
-      <Brands />
-      <Carousel />
-    </main>
+    <div>
+      <Home />
+    </div>
   );
-}
+};
+
+export default page;

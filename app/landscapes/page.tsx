@@ -1,15 +1,10 @@
-import HeroOverly from "@/components/hero-overlay";
-import SampleMenu from "@/components/sample-menu";
 import React from "react";
+import Nav from "@/components/nav";
+import Brands from "@/components/brands";
 
 type Props = {};
-
 const Landscapes = (props: Props) => {
-  return (
-    <div className="bg-landscape h-[90vh] bg-cover bg-no-repeat">
-      <HeroOverly text="EXPLORE" styledText="Landscapes" />
-    </div>
-  );
+  return <div className="text-black">Information</div>;
 };
 
 export default Landscapes;
