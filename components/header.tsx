@@ -12,7 +12,7 @@ type Props = {};
 
 const header = (props: Props) => {
   return (
-    <div className="bg-hero-pattern w-full h-screen bg-cover bg-no-repeat">
+    <div className="bg-hero-pattern w-full bg-cover h-[90vh] bg-no-repeat relative">
       <div className="container pt-64">
         <div>
           <div>
@@ -31,7 +31,7 @@ const header = (props: Props) => {
             </svg>
           </div>
           <div>
-            <h1 className="text-white text-6xl font-bold w-3/6 mt-4">
+            <h1 className="text-white text-6xl font-bold md:w-full lg:w-3/6 mt-4">
               No matter where you’re going to, we’ll take you there
             </h1>
           </div>

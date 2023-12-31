@@ -11,7 +11,7 @@ type Props = {
 const sampleCard = (props: Props) => {
   return (
     <div>
-      <div className="rounded-[50px] hover:shadow-md py-16 transition-all">
+      <div className="rounded-[50px] hover:shadow-md  transition-all">
         <Image
           className="mx-auto"
           src={props.src}

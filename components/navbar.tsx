@@ -12,12 +12,13 @@ type Props = {};
 
 const navbar = (props: Props) => {
   return (
-    <div className="absolute z-50">
-      <div className="w-screen container">
-        <nav className="flex justify-between  items-center py-12 w-full">
+    <div className="absolute z-50 w-full">
+      <div className="container">
+        <nav className="flex justify-between  items-center py-12">
           <div>
             <Image src="./Travello.svg" width={120} height={140} alt="Logo" />
           </div>
+
           <div>
             <ul className="hidden md:flex justify-between items-center gap-6 text-sm text-white">
               <li>
