@@ -50,15 +50,6 @@ const SideBooker = (props: Props) => {
           </div>
         </form>
       </div>
-      <div className="h-auto">
-        <Image
-          src="/plane.svg"
-          height={600}
-          width={500}
-          alt="Plane"
-          className="relative scale-120"
-        />
-      </div>
     </div>
   );
 };

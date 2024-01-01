@@ -10,7 +10,7 @@ import Link from "next/link";
 
 type Props = {};
 
-const navbar = (props: Props) => {
+const navbar = () => {
   return (
     <div className="absolute z-50 w-full">
       <div className="container">

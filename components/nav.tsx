@@ -15,14 +15,14 @@ type Props = {};
 export default function Nav(props: Props) {
   const pathName = usePathname();
   return (
-    <div className="flex justify-around items-center relative h-4 ">
+    <div className="flex justify-around items-center relative h-4">
       {links.map((link) => {
         return (
           <Link
             key={link.name}
             href={link.href}
             className={clsx(
-              "bg-gray-200 py-8 grow mx-auto text-center text-lg",
+              "bg-gray-200 py-8 grow mx-auto text-center md:text-lg text-sm",
               {
                 "bg-white": pathName == link.href,
               }

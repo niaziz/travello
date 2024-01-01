@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('.././public/hero.png')",
+        "hero-mobile": "url('.././public/hero-mobile.png')",
         "about-us": "url('.././public/about-us.png')",
         landscape: "url('.././public/landscapes.png')",
         footer: "url('.././public/footer.png')",

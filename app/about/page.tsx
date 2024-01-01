@@ -5,7 +5,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="bg-about-us w-full h-screen bg-cover bg-no-repeat">
+    <div className="bg-about-us w-full h-[90vh] bg-cover bg-no-repeat">
       <HeroOverly text="READ" styledText="About Us" />
     </div>
   );
