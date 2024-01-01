@@ -35,7 +35,7 @@ const MediaQuery = (width: any) => {
       // compatibility for browser that sdont have removeEventListener
       return () => media.removeListener(updateTarget);
     }
-  });
+  }, [width, updateTarget]);
 
   return targetReached;
 };
