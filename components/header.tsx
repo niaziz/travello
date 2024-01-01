@@ -5,7 +5,7 @@ import { useState, useCallback, useEffect } from "react";
 
 type Props = {};
 
-const useMediaQuery = (width: any) => {
+const MediaQuery = (width: any) => {
   const [targetReached, setTargetReached] = useState(false);
 
   const updateTarget = useCallback((e: any) => {
@@ -41,7 +41,7 @@ const useMediaQuery = (width: any) => {
 };
 
 const header = () => {
-  const isBreakpoint = useMediaQuery(680);
+  const isBreakpoint = MediaQuery(680);
   return (
     <div className="bg-hero-pattern  w-full h-[400px] bg-cover border-b-4 border-[#DF6951] md:border-none md:bg-cover md:h-[90vh] bg-no-repeat relative mb-56">
       {isBreakpoint ? (
