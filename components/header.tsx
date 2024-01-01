@@ -69,7 +69,9 @@ const header = () => {
                   </div>
                 </div>
               </div>
-              <Button className="my-6 w-full shadow-lg">Today's Promo</Button>
+              <Button className="my-6 w-full shadow-lg">
+                Today&aposs Promo
+              </Button>
             </div>
           </div>
         </div>
