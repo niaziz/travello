@@ -49,7 +49,7 @@ const header = () => {
           <h1 className="text-3xl text-white font-bold">
             Where are you going next?
           </h1>
-          <div className=" bg-[#f3f3f396] backdrop-blur-md rounded-[20px]">
+          <div className=" bg-[#f3f3f396] backdrop-blur-md rounded-[20px] shadow-xl">
             <div className="text-center mx-6">
               <input
                 className="px-4 py-3 my-8 outline-none rounded-[11px] shadow-lg w-full"
