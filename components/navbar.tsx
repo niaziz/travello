@@ -5,7 +5,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
+import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 type Props = {};
@@ -21,13 +21,13 @@ const navbar = () => {
 
           <div>
             <ul className="hidden md:flex justify-between items-center gap-6 text-sm text-white">
-              <li>
+              <li className="outline-b-4 outline-[#DF6951] py-1">
                 <Link href="/" className="">
                   Home
                 </Link>
               </li>
-              <li>
-                <a href="/about">About</a>
+              <li className="hover:border-b-4 border-[#DF6951] py-1 duration-75 ease-in-out">
+                <Link href="/about">About</Link>
               </li>
 
               <li>
@@ -70,7 +70,9 @@ const navbar = () => {
             </ul>
           </div>
           <div className="">
-            <Button>Get in Touch</Button>
+            <Button className="bg-[#DF6951] text-white px-4 py-4 text-sm">
+              Get in Touch
+            </Button>
           </div>
         </nav>
       </div>

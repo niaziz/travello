@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "./ui/button";
+
+import { Input, Button } from "@nextui-org/react";
 
 type Props = {};
 
@@ -19,37 +20,46 @@ const Footer = (props: Props) => {
             <p className="text-sm text-gray-400">
               Travel helps companies manage <br /> payments easily.
             </p>
-            <img src="social.svg" alt="" />
+            <Image src="/social.svg" alt="" />
           </div>
-          <div className="md:flex w-9/12 justify-between mt-4">
-            <div className="space-y-4">
-              <h1 className="font-bold text-1xl">Company</h1>
-              <div className="text-gray-400 space-y-4 text-sm">
-                <p>About us</p>
-                <p>Careers</p>
-                <p>Blog</p>
-                <p>Pricing</p>
+          <div className="md:flex md:w-9/12 md:mt-4 mt-6">
+            <div className="flex md:flex-row justify-between items-center w-full md:w-full">
+              <div className="space-y-4">
+                <h1 className="font-bold text-1xl">Company</h1>
+                <div className="text-gray-400 space-y-4 text-sm">
+                  <p>About us</p>
+                  <p>Careers</p>
+                  <p>Blog</p>
+                  <p>Pricing</p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h1 className="font-bold text-1xl mr-8">Desinations</h1>
+                <div className="text-gray-400 space-y-4 text-sm">
+                  <p>Maldives</p>
+                  <p>Bamyan</p>
+                  <p>Switzerland</p>
+                  <p>Torronto</p>
+                </div>
               </div>
             </div>
-            <div className="space-y-4">
-              <h1 className="font-bold text-1xl mr-8">Desinations</h1>
-              <div className="text-gray-400 space-y-4 text-sm">
-                {" "}
-                <p>Maldives</p>
-                <p>Bamyan</p>
-                <p>Switzerland</p>
-                <p>Torronto</p>
-              </div>
-            </div>
-            <div className="space-y-4">
+            <div className="space-y-4  mt-8 md:w-full md:mt-0">
               <h1 className="font-bold text-1xl">Join our Newsletter</h1>
-              <div>
-                <input
-                  type="text"
-                  className="bg-gray-200 text-sm py-[13px] px-5 rounded-[11px] outline-none"
-                  placeholder="Your email address"
+              <div className="flex items-center">
+                <Input
+                  type="email"
+                  label="Your email address"
+                  className=" text-sm rounded-[11px] outline-none w-auto"
                 />
-                <Button className="translate-x-[-17px]">Subscribe</Button>
+                {/* <input
+                  type="text"
+                  className="bg-gray-200 text-sm py-[13px] px-5 rounded-[11px] outline-none w-auto"
+                  placeholder="Your email address"
+                /> */}
+
+                <Button className="bg-[#DF6951] text-white px-4 text-sm translate-x-[-17px] py-7">
+                  Get in Touch
+                </Button>
               </div>
               <p className="text-sm text-gray-400">
                 * Will send you weekly updates for your <br /> better tour
